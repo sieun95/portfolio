@@ -1,5 +1,23 @@
 const categories = [
   {
+    title: '프론트엔드',
+    items: [
+      { name: 'React', primary: true },
+      { name: 'Next.js', primary: true },
+      { name: 'TypeScript', primary: false },
+      { name: 'JavaScript', primary: false },
+    ],
+  },
+  {
+    title: '백엔드',
+    items: [
+      { name: 'Node.js', primary: true },
+      { name: 'NestJS', primary: true },
+      { name: 'Express', primary: false },
+      { name: 'MySQL', primary: false },
+    ],
+  },
+  {
     title: '블록체인',
     items: [
       { name: 'Solidity', primary: true },
@@ -9,28 +27,12 @@ const categories = [
     ],
   },
   {
-    title: '백엔드',
-    items: [
-      { name: 'Node.js', primary: true },
-      { name: 'Express', primary: true },
-      { name: 'NestJS', primary: false },
-    ],
-  },
-  {
-    title: '프론트엔드',
-    items: [
-      { name: 'React', primary: true },
-      { name: 'Next.js', primary: true },
-      { name: 'TypeScript', primary: false },
-    ],
-  },
-  {
     title: '도구 & AI',
     items: [
       { name: 'Claude Code', primary: true },
       { name: 'AWS', primary: true },
       { name: 'Git / GitHub', primary: false },
-      { name: 'MySQL', primary: false },
+      { name: 'Vercel', primary: false },
     ],
   },
 ]
