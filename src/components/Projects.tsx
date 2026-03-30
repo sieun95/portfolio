@@ -5,7 +5,8 @@ const projects = [
     desc: 'AI를 페르소나로 만들어 그리운 사람과 편지를 주고받을 수 있는 서비스. 사용자가 설정한 페르소나를 기반으로 AI가 감성적인 답장을 생성합니다.',
     liveUrl: 'https://dearmy.ai/',
     liveLabel: 'dearmy.ai →',
-    techs: ['TypeScript', 'Next.js'],
+    githubUrl: 'https://github.com/sieun95/dear-my-ai',
+    techs: ['React', 'Vite', 'Supabase'],
   },
   {
     type: '풀스택 · 팀 프로젝트',
@@ -13,6 +14,7 @@ const projects = [
     desc: 'AI 기술을 활용한 B2B 커머스 플랫폼. 프론트엔드와 백엔드를 모두 설계 및 구현한 풀스택 프로젝트입니다.',
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
+    githubUrl: 'https://github.com/shop-fullstack',
     techs: ['Next.js', 'NestJS'],
   },
   {
@@ -44,6 +46,11 @@ export default function Projects() {
               <a href={p.liveUrl} target="_blank" rel="noreferrer" className="project-link">
                 {p.liveLabel}
               </a>
+              {'githubUrl' in p && p.githubUrl && (
+                <a href={p.githubUrl} target="_blank" rel="noreferrer" className="project-link">
+                  GitHub →
+                </a>
+              )}
               {p.techs.map((t) => (
                 <span key={t} className="project-tech">{t}</span>
               ))}

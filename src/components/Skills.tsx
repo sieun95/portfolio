@@ -30,7 +30,9 @@ const categories = [
     title: '도구 & AI',
     items: [
       { name: 'Claude Code', primary: true },
-      { name: 'AWS', primary: true },
+      { name: 'Supabase', primary: true },
+      { name: 'Cloudflare', primary: false },
+      { name: 'AWS', primary: false },
       { name: 'Git / GitHub', primary: false },
       { name: 'Vercel', primary: false },
     ],

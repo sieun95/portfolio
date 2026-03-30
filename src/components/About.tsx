@@ -24,7 +24,6 @@ export default function About() {
         <div className="about-info">
           <span>한아이덴티티코리아 재직 중</span>
           <span>한양사이버대 컴퓨터공학 졸업</span>
-          <span>대한민국</span>
         </div>
       </div>
     </section>
