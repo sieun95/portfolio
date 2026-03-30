@@ -1,4 +1,19 @@
-const projects = [
+interface TechGroup {
+  label: string
+  items: string[]
+}
+
+interface Project {
+  type: string
+  title: string
+  desc: string
+  liveUrl: string
+  liveLabel: string
+  githubUrl?: string
+  techGroups: TechGroup[]
+}
+
+const projects: Project[] = [
   {
     type: 'AI 서비스 · 풀스택 · 1인 개발',
     title: 'Dear My AI',
@@ -6,7 +21,11 @@ const projects = [
     liveUrl: 'https://dearmy.ai/',
     liveLabel: 'dearmy.ai →',
     githubUrl: 'https://github.com/sieun95/dear-my-ai',
-    techs: ['React', 'Vite', 'Claude API', 'Cloudflare'],
+    techGroups: [
+      { label: '언어/프레임워크', items: ['React', 'Vite'] },
+      { label: 'AI', items: ['Claude API'] },
+      { label: '인프라', items: ['Cloudflare'] },
+    ],
   },
   {
     type: 'AI 서비스 · 풀스택 · 1인 개발',
@@ -15,7 +34,11 @@ const projects = [
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
     githubUrl: 'https://github.com/orgs/shop-fullstack/repositories',
-    techs: ['Next.js', 'NestJS', 'Supabase', 'Vercel'],
+    techGroups: [
+      { label: '언어/프레임워크', items: ['Next.js', 'NestJS'] },
+      { label: 'DB', items: ['Supabase'] },
+      { label: '인프라', items: ['Vercel'] },
+    ],
   },
   {
     type: '백엔드 · 블록체인',
@@ -23,15 +46,21 @@ const projects = [
     desc: 'DeFi 스왑 플랫폼. 스마트컨트랙트 전체 및 백엔드 서버를 단독 설계·구현했습니다. 프론트엔드를 제외한 모든 개발을 담당했습니다.',
     liveUrl: 'https://beatswap.io/',
     liveLabel: 'beatswap.io →',
-    techs: ['Solidity', 'Node.js', 'ethers.js'],
+    techGroups: [
+      { label: '언어/프레임워크', items: ['Solidity', 'Node.js'] },
+      { label: '블록체인', items: ['ethers.js'] },
+    ],
   },
   {
-    type: '외주 · 웹사이트',
+    type: '백엔드 · 블록체인',
     title: 'AUG Gold',
-    desc: 'AUG Gold 공식 웹사이트 외주 개발. 클라이언트 요구사항에 맞춰 웹사이트를 설계하고 구현하였습니다.',
+    desc: 'AUG Gold 공식 웹사이트 개발. 클라이언트 요구사항에 맞춰 웹사이트를 설계하고 구현하였습니다.',
     liveUrl: 'https://www.auggold.com/en',
     liveLabel: 'auggold.com →',
-    techs: ['Render', 'BNB Network'],
+    techGroups: [
+      { label: '인프라', items: ['Render'] },
+      { label: '블록체인', items: ['BNB Network'] },
+    ],
   },
 ]
 
@@ -54,13 +83,15 @@ export default function Projects() {
               <a href={p.liveUrl} target="_blank" rel="noreferrer" className="project-link">
                 {p.liveLabel}
               </a>
-              {'githubUrl' in p && p.githubUrl && (
+              {p.githubUrl && (
                 <a href={p.githubUrl} target="_blank" rel="noreferrer" className="project-link">
                   GitHub →
                 </a>
               )}
-              {p.techs.map((t) => (
-                <span key={t} className="project-tech">{t}</span>
+              {p.techGroups.map((g) => (
+                <span key={g.label} className="project-tech">
+                  {g.label}: {g.items.join(', ')}
+                </span>
               ))}
             </div>
           </div>
