@@ -18,6 +18,14 @@ const projects = [
     techs: ['Next.js', 'NestJS'],
   },
   {
+    type: '백엔드 · 블록체인',
+    title: 'BeatSwap',
+    desc: 'DeFi 스왑 플랫폼. 스마트컨트랙트 전체 및 백엔드 서버를 단독 설계·구현했습니다. 프론트엔드를 제외한 모든 개발을 담당했습니다.',
+    liveUrl: 'https://beatswap.io/',
+    liveLabel: 'beatswap.io →',
+    techs: ['Solidity', 'Node.js', 'ethers.js'],
+  },
+  {
     type: '외주 · 웹사이트',
     title: 'AUG Gold',
     desc: 'AUG Gold 공식 웹사이트 외주 개발. 클라이언트 요구사항에 맞춰 웹사이트를 설계하고 구현하였습니다.',
