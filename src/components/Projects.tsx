@@ -14,7 +14,7 @@ const projects = [
     desc: 'AI 기술을 활용한 B2B 커머스 플랫폼. 프론트엔드와 백엔드를 모두 설계 및 구현한 풀스택 프로젝트입니다.',
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
-    githubUrl: 'https://github.com/shop-fullstack',
+    githubUrl: 'https://github.com/orgs/shop-fullstack/repositories',
     techs: ['Next.js', 'NestJS'],
   },
   {
