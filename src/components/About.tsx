@@ -22,9 +22,9 @@ export default function About() {
           </p>
         </div>
         <div className="about-info">
-          <span>leesieun9524@gmail.com</span>
-          <span>+82 10-2450-6926</span>
-          <span>github.com/sieun95</span>
+          <span>한아이덴티티코리아 재직 중</span>
+          <span>한양사이버대 컴퓨터공학 졸업</span>
+          <span>대한민국</span>
         </div>
       </div>
     </section>
