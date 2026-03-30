@@ -6,7 +6,7 @@ const projects = [
     liveUrl: 'https://dearmy.ai/',
     liveLabel: 'dearmy.ai →',
     githubUrl: 'https://github.com/sieun95/dear-my-ai',
-    techs: ['React', 'Vite', 'Claude API'],
+    techs: ['React', 'Vite', 'Claude API', 'Cloudflare'],
   },
   {
     type: '풀스택 · 1인 개발',
