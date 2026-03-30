@@ -1,49 +1,24 @@
-import { GitHubIcon, MailIcon } from './Icons'
-
-const contacts = [
-  {
-    href: 'mailto:leesieun9524@gmail.com',
-    icon: <MailIcon />,
-    label: '이메일',
-    value: 'leesieun9524@gmail.com',
-  },
-  {
-    href: 'https://github.com/sieun95',
-    icon: <GitHubIcon />,
-    label: 'GitHub',
-    value: 'github.com/sieun95',
-    external: true,
-  },
-]
-
 export default function Contact() {
   return (
     <section className="section" id="contact">
-      <div className="container">
-        <span className="section-label">Contact</span>
-        <h2 className="section-title">
-          <span className="gradient-text">연락</span>처
-        </h2>
-        <div className="contact-content">
-          <p className="contact-desc">
-            함께 일하고 싶으시거나, 궁금한 점이 있으시면 편하게 연락해 주세요.
-          </p>
-          <div className="contact-links">
-            {contacts.map((c) => (
-              <a
-                key={c.label}
-                href={c.href}
-                className="contact-item"
-                {...(c.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-              >
-                <div className="contact-icon-wrap">{c.icon}</div>
-                <div>
-                  <span className="contact-label">{c.label}</span>
-                  <span className="contact-value">{c.value}</span>
-                </div>
-              </a>
-            ))}
-          </div>
+      <h2 className="section-title">연락처</h2>
+      <div className="contact-grid">
+        <div className="contact-label-col">
+          <span className="contact-label">문의</span>
+          <span className="contact-hint">
+            제안이나 협업 관련 연락은<br />아래로 부탁드립니다.
+          </span>
+        </div>
+        <div className="contact-body">
+          <a href="mailto:leesieun9524@gmail.com" className="contact-email">
+            leesieun9524@gmail.com
+          </a>
+          <a href="tel:+821024506926" className="contact-link">
+            +82 10-2450-6926
+          </a>
+          <a href="https://github.com/sieun95" target="_blank" rel="noreferrer" className="contact-link">
+            github.com/sieun95 →
+          </a>
         </div>
       </div>
     </section>

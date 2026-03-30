@@ -4,7 +4,6 @@ const links = [
   { href: '#about', label: '소개' },
   { href: '#experience', label: '경력' },
   { href: '#projects', label: '프로젝트' },
-  { href: '#skills', label: '기술 스택' },
   { href: '#contact', label: '연락처' },
 ]
 
@@ -22,11 +21,7 @@ export default function Nav() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-inner">
         <a href="#hero" className="nav-logo">SE.</a>
-        <button
-          className="nav-toggle"
-          aria-label="메뉴 열기"
-          onClick={() => setMenuOpen((v) => !v)}
-        >
+        <button className="nav-toggle" aria-label="메뉴" onClick={() => setMenuOpen((v) => !v)}>
           <span /><span /><span />
         </button>
         <ul className={`nav-links${menuOpen ? ' open' : ''}`}>

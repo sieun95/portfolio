@@ -1,51 +1,35 @@
 const experiences = [
   {
-    date: '2023.01 — 현재',
-    company: 'OO 회사',
-    role: '프론트엔드 개발자',
-    details: [
-      'React 기반 웹 애플리케이션 개발 및 유지보수',
-      'UI/UX 개선을 통한 사용자 경험 향상',
-      'RESTful API 연동 및 상태 관리 최적화',
-    ],
+    date: '2022.08 — 현재',
+    role: '백엔드/블록체인 · 주임 · 3년 8개월',
+    company: '한아이덴티티코리아',
+    desc: 'DeFi 전 영역 스마트컨트랙트 단독 설계·구현 (20종 이상). Uniswap·PancakeSwap 호환 스왑 및 유동성 풀 구현. Hardhat 테스트 코드 상시 작성, 외부 보안 감사(Audit) 통과. Alchemy·ethers.js 기반 온체인 데이터 수집 파이프라인 구축, 캐싱 최적화를 통한 API 호출 90% 이상 감소.',
   },
   {
-    date: '2021.06 — 2022.12',
-    company: 'OO 스타트업',
-    role: '풀스택 개발자',
-    details: [
-      'Node.js + Express 기반 백엔드 API 설계 및 구현',
-      '데이터베이스 설계 및 쿼리 최적화',
-      '서비스 런칭 및 운영 경험',
-    ],
+    date: '2021.08 — 2022.07',
+    role: '블록체인 핀테크 과정 · 1년',
+    company: '경일게임아카데미',
+    desc: '블록체인 기반 핀테크 및 응용 SW 개발자 양성과정 수료. JavaScript, Node.js, Solidity, React 등 웹·블록체인 개발 전반 학습. 수료 후 한아이덴티티코리아 입사.',
   },
 ]
 
 export default function Experience() {
   return (
-    <section className="section section-alt" id="experience">
-      <div className="container">
-        <span className="section-label">Experience</span>
-        <h2 className="section-title">
-          <span className="gradient-text">경력</span> 사항
-        </h2>
-        <div className="timeline">
-          {experiences.map((exp) => (
-            <div className="timeline-item" key={exp.company}>
-              <div className="timeline-marker" />
-              <div className="timeline-content">
-                <span className="timeline-date">{exp.date}</span>
-                <h3 className="timeline-company">{exp.company}</h3>
-                <p className="timeline-role">{exp.role}</p>
-                <ul className="timeline-details">
-                  {exp.details.map((d) => (
-                    <li key={d}>{d}</li>
-                  ))}
-                </ul>
-              </div>
+    <section className="section" id="experience">
+      <h2 className="section-title">경력</h2>
+      <div className="exp-list">
+        {experiences.map((exp) => (
+          <div className="exp-item" key={exp.company}>
+            <div className="exp-meta">
+              <span className="exp-date">{exp.date}</span>
+              <span className="exp-role">{exp.role}</span>
             </div>
-          ))}
-        </div>
+            <div className="exp-body">
+              <h3 className="exp-company">{exp.company}</h3>
+              <p className="exp-desc">{exp.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   )

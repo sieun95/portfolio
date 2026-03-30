@@ -13,8 +13,6 @@ export default function App() {
 
   return (
     <>
-      <div className="bg-glow bg-glow-1" />
-      <div className="bg-glow bg-glow-2" />
       <Nav />
       <Hero />
       <About />
