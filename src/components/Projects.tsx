@@ -6,16 +6,16 @@ const projects = [
     liveUrl: 'https://dearmy.ai/',
     liveLabel: 'dearmy.ai →',
     githubUrl: 'https://github.com/sieun95/dear-my-ai',
-    techs: ['React', 'Vite', 'Supabase'],
+    techs: ['React', 'Vite', 'Claude API'],
   },
   {
-    type: '풀스택 · 팀 프로젝트',
+    type: '풀스택 · 1인 개발',
     title: 'AI B2B 쇼핑몰',
-    desc: 'AI 기술을 활용한 B2B 커머스 플랫폼. 프론트엔드와 백엔드를 모두 설계 및 구현한 풀스택 프로젝트입니다.',
+    desc: 'AI 기술을 활용한 B2B 커머스 플랫폼. 프론트엔드와 백엔드를 모두 설계 및 구현한 1인 풀스택 프로젝트입니다.',
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
     githubUrl: 'https://github.com/orgs/shop-fullstack/repositories',
-    techs: ['Next.js', 'NestJS'],
+    techs: ['Next.js', 'NestJS', 'Supabase'],
   },
   {
     type: '백엔드 · 블록체인',
@@ -31,7 +31,7 @@ const projects = [
     desc: 'AUG Gold 공식 웹사이트 외주 개발. 클라이언트 요구사항에 맞춰 웹사이트를 설계하고 구현하였습니다.',
     liveUrl: 'https://www.auggold.com/en',
     liveLabel: 'auggold.com →',
-    techs: [],
+    techs: ['Render', 'BNB Network'],
   },
 ]
 
