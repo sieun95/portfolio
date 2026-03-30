@@ -1,6 +1,6 @@
 const projects = [
   {
-    type: 'AI 서비스 · 1인 개발',
+    type: 'AI 서비스 · 풀스택 · 1인 개발',
     title: 'Dear My AI',
     desc: 'AI를 페르소나로 만들어 그리운 사람과 편지를 주고받을 수 있는 서비스. 사용자가 설정한 페르소나를 기반으로 AI가 감성적인 답장을 생성합니다.',
     liveUrl: 'https://dearmy.ai/',
@@ -9,13 +9,13 @@ const projects = [
     techs: ['React', 'Vite', 'Claude API', 'Cloudflare'],
   },
   {
-    type: '풀스택 · 1인 개발',
+    type: 'AI 서비스 · 풀스택 · 1인 개발',
     title: 'AI B2B 쇼핑몰',
     desc: 'AI 기술을 활용한 B2B 커머스 플랫폼. 프론트엔드와 백엔드를 모두 설계 및 구현한 1인 풀스택 프로젝트입니다.',
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
     githubUrl: 'https://github.com/orgs/shop-fullstack/repositories',
-    techs: ['Next.js', 'NestJS', 'Supabase'],
+    techs: ['Next.js', 'NestJS', 'Supabase', 'Vercel'],
   },
   {
     type: '백엔드 · 블록체인',
