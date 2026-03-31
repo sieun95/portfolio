@@ -17,9 +17,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    type: 'AI 커머스 · 풀스택 · 1인 개발',
+    type: 'AI 커머스 · 풀스택 · 개인 프로젝트',
     title: 'AI B2B 쇼핑몰',
-    desc: 'Gemini AI 기반 B2B 커머스 플랫폼. 상품 관리, 장바구니, 결제, 주문 등 Core Commerce 전체를 1인 풀스택으로 설계·구현. AI 챗봇 상담, 맞춤 상품 추천, 수요 예측(선형 회귀 + 가중 이동평균), 트렌드 분석, 재주문/재입고 추천 등 AI가 DB 통계를 해석해 자연어 인사이트를 제공합니다.',
+    desc: '커머스 도메인 학습을 위해 직접 설계·구현한 포트폴리오 프로젝트. 상품 관리, 장바구니, 결제, 주문 흐름을 구현하고, Gemini AI를 연동해 챗봇 상담, 맞춤 상품 추천, 수요 예측(선형 회귀 + 가중 이동평균), 트렌드 분석, 재주문/재입고 추천 기능을 개발했습니다.',
     liveUrl: 'https://web-eight-nu-11.vercel.app',
     liveLabel: '사이트 →',
     githubUrl: 'https://github.com/orgs/shop-fullstack/repositories',
