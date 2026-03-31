@@ -3,15 +3,15 @@ import FadeIn from './FadeIn'
 const experiences = [
   {
     date: '2022.08 — 현재',
-    role: '백엔드/블록체인 · 주임 · 3년 8개월',
+    role: '백엔드 개발 · 주임 · 3년 8개월',
     company: '한아이덴티티코리아',
-    desc: 'DeFi 전 영역 스마트컨트랙트 단독 설계·구현 (20종 이상). Uniswap·PancakeSwap 호환 스왑 및 유동성 풀 구현. Hardhat 테스트 코드 상시 작성, 외부 보안 감사(Audit) 통과. Alchemy·ethers.js 기반 온체인 데이터 수집 파이프라인 구축, 캐싱 최적화를 통한 API 호출 90% 이상 감소.',
+    desc: 'Express 기반 RESTful API 설계 및 백엔드 개발. 데이터 수집 파이프라인 구축, 인메모리 캐싱과 MySQL 저장 분리 적용으로 API 호출 90% 이상 감소 및 응답속도 개선. 스마트컨트랙트 20종 이상 단독 설계·구현, 외부 보안 감사(Audit) 통과.',
   },
   {
     date: '2021.08 — 2022.07',
-    role: '블록체인 핀테크 과정 · 1년',
+    role: '웹·블록체인 개발 과정 · 1년',
     company: '경일게임아카데미',
-    desc: '블록체인 기반 핀테크 및 응용 SW 개발자 양성과정 수료. JavaScript, Node.js, Solidity, React 등 웹·블록체인 개발 전반 학습. 수료 후 한아이덴티티코리아 입사.',
+    desc: '핀테크 및 응용 SW 개발자 양성과정 수료. JavaScript, Node.js, React 등 웹 개발 전반 학습. 수료 후 한아이덴티티코리아 입사.',
   },
 ]
 

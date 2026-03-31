@@ -6,7 +6,7 @@ const categories = [
     items: [
       { name: 'React', primary: true },
       { name: 'Next.js', primary: true },
-      { name: 'TypeScript', primary: false },
+      { name: 'TypeScript', primary: true },
       { name: 'JavaScript', primary: false },
     ],
   },
@@ -15,28 +15,27 @@ const categories = [
     items: [
       { name: 'Node.js', primary: true },
       { name: 'NestJS', primary: true },
-      { name: 'Express', primary: false },
-      { name: 'MySQL', primary: false },
+      { name: 'Express', primary: true },
+      { name: 'RESTful API', primary: false },
     ],
   },
   {
-    title: '블록체인',
+    title: 'DB & 데이터',
     items: [
-      { name: 'Solidity', primary: true },
-      { name: 'Hardhat', primary: true },
-      { name: 'ethers.js', primary: false },
-      { name: 'ERC-20 / NFT', primary: false },
+      { name: 'PostgreSQL', primary: true },
+      { name: 'MySQL', primary: true },
+      { name: 'Supabase', primary: false },
+      { name: '쿼리 튜닝 / 캐싱', primary: false },
     ],
   },
   {
-    title: '도구 & AI',
+    title: 'AI & 인프라',
     items: [
+      { name: 'Claude API / Gemini', primary: true },
       { name: 'Claude Code', primary: true },
-      { name: 'Supabase', primary: true },
-      { name: 'Cloudflare', primary: false },
+      { name: 'Vercel / Cloudflare', primary: false },
       { name: 'AWS', primary: false },
       { name: 'Git / GitHub', primary: false },
-      { name: 'Vercel', primary: false },
     ],
   },
 ]

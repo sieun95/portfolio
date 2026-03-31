@@ -5,8 +5,8 @@ export default function Hero() {
         <h1 className="hero-name">이시은</h1>
         <p className="hero-title">풀스택<br />웹 개발자</p>
         <p className="hero-desc">
-          AI를 활용한 웹 서비스부터 블록체인까지.<br />
-          기획부터 배포까지 혼자서도 해냅니다.
+          커머스부터 AI 서비스까지, 프론트엔드와 백엔드를<br />
+          A to Z로 설계하고 직접 만듭니다.
         </p>
       </div>
     </section>
