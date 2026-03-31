@@ -13,7 +13,7 @@ export default function FadeIn({ children, className = '', delay }: Props) {
   return (
     <div
       ref={ref}
-      className={`fade-in${visible ? ' visible' : ''} ${className}`}
+      className={`fade-in${visible ? ' visible' : ''}${className ? ` ${className}` : ''}`}
       style={delay ? { transitionDelay: `${delay}s` } : undefined}
     >
       {children}
