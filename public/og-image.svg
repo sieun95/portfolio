@@ -1,0 +1,6 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <text x="60" y="260" font-family="Inter, sans-serif" font-size="120" font-weight="700" fill="#FFFFFF" letter-spacing="-4">이시은</text>
+  <text x="60" y="380" font-family="Inter, sans-serif" font-size="60" font-weight="200" fill="#A1A1AA" letter-spacing="-2">풀스택 웹 개발자</text>
+  <text x="60" y="540" font-family="monospace" font-size="20" fill="#A1A1AA">sieun95.github.io/portfolio</text>
+</svg>

@@ -526,11 +526,11 @@ button:focus-visible {
   .about-info { padding-left: 0; }
   .exp-item { grid-template-columns: 1fr; gap: 16px; }
   .project-item { grid-template-columns: 1fr; gap: 16px; }
-  .project-links { align-items: flex-start; }
+  .project-links { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
   .project-name { font-size: 2rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
   .skills-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .skill-col { padding: 0 !important; border: none !important; }
+  .skills-grid > .skill-col { padding: 0; border: none; }
 }
 
 @media (max-width: 768px) {
