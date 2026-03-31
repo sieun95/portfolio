@@ -1,3 +1,5 @@
+import FadeIn from './FadeIn'
+
 interface TechGroup {
   label: string
   items: string[]
@@ -72,7 +74,7 @@ export default function Projects() {
       <h2 className="section-title">프로젝트</h2>
       <div className="project-list">
         {projects.map((p, i) => (
-          <div className="project-item" key={p.title}>
+          <FadeIn className="project-item" key={p.title} delay={i * 0.1}>
             <div className="project-meta">
               <span className="project-num">{String(i + 1).padStart(2, '0')}</span>
               <span className="project-type">{p.type}</span>
@@ -96,7 +98,7 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-          </div>
+          </FadeIn>
         ))}
       </div>
     </section>

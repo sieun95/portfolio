@@ -1,8 +1,10 @@
+import FadeIn from './FadeIn'
+
 export default function About() {
   return (
     <section className="section" id="about">
       <h2 className="section-title">소개</h2>
-      <div className="about-grid">
+      <FadeIn className="about-grid">
         <div className="about-label-col">
           <span className="about-label-text">자기소개</span>
         </div>
@@ -25,7 +27,7 @@ export default function About() {
           <span>한아이덴티티코리아 재직 중</span>
           <span>한양사이버대 컴퓨터공학 졸업</span>
         </div>
-      </div>
+      </FadeIn>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+import FadeIn from './FadeIn'
+
 const experiences = [
   {
     date: '2022.08 — 현재',
@@ -18,8 +20,8 @@ export default function Experience() {
     <section className="section" id="experience">
       <h2 className="section-title">경력</h2>
       <div className="exp-list">
-        {experiences.map((exp) => (
-          <div className="exp-item" key={exp.company}>
+        {experiences.map((exp, i) => (
+          <FadeIn className="exp-item" key={exp.company} delay={i * 0.1}>
             <div className="exp-meta">
               <span className="exp-date">{exp.date}</span>
               <span className="exp-role">{exp.role}</span>
@@ -28,7 +30,7 @@ export default function Experience() {
               <h3 className="exp-company">{exp.company}</h3>
               <p className="exp-desc">{exp.desc}</p>
             </div>
-          </div>
+          </FadeIn>
         ))}
       </div>
     </section>

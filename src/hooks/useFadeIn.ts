@@ -1,24 +1,26 @@
-import { useEffect } from 'react'
+import { useEffect, useRef, useState, type RefObject } from 'react'
 
-export default function useFadeIn() {
+export function useFadeRef(): [RefObject<HTMLDivElement | null>, boolean] {
+  const ref = useRef<HTMLDivElement | null>(null)
+  const [visible, setVisible] = useState(false)
+
   useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible')
-        })
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true)
+          observer.disconnect()
+        }
       },
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' },
     )
 
-    const elements = document.querySelectorAll(
-      '.about-grid, .exp-item, .project-item, .skill-col, .contact-grid',
-    )
-    elements.forEach((el) => {
-      el.classList.add('fade-in')
-      observer.observe(el)
-    })
-
+    observer.observe(el)
     return () => observer.disconnect()
   }, [])
+
+  return [ref, visible]
 }

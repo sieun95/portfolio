@@ -1,8 +1,10 @@
+import FadeIn from './FadeIn'
+
 export default function Contact() {
   return (
     <section className="section" id="contact">
       <h2 className="section-title">연락처</h2>
-      <div className="contact-grid">
+      <FadeIn className="contact-grid">
         <div className="contact-label-col">
           <span className="contact-label">문의</span>
           <span className="contact-hint">
@@ -20,7 +22,7 @@ export default function Contact() {
             github.com/sieun95 →
           </a>
         </div>
-      </div>
+      </FadeIn>
     </section>
   )
 }

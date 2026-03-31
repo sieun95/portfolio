@@ -1,3 +1,5 @@
+import FadeIn from './FadeIn'
+
 const categories = [
   {
     title: '프론트엔드',
@@ -44,8 +46,8 @@ export default function Skills() {
     <section className="section" id="skills">
       <h2 className="section-title">기술</h2>
       <div className="skills-grid">
-        {categories.map((cat) => (
-          <div className="skill-col" key={cat.title}>
+        {categories.map((cat, i) => (
+          <FadeIn className="skill-col" key={cat.title} delay={i * 0.08}>
             <span className="skill-col-title">{cat.title}</span>
             <div className="skill-items">
               {cat.items.map((item) => (
@@ -54,7 +56,7 @@ export default function Skills() {
                 </span>
               ))}
             </div>
-          </div>
+          </FadeIn>
         ))}
       </div>
     </section>
